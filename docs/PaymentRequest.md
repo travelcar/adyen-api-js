@@ -1,0 +1,42 @@
+# AdyenApiJs.PaymentRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**card** | [**Card**](Card.md) |  | [optional] 
+**mpiData** | [**ThreeDSecureData**](ThreeDSecureData.md) |  | [optional] 
+**bankAccount** | [**BankAccount**](BankAccount.md) |  | [optional] 
+**amount** | [**Amount**](Amount.md) |  | [optional] 
+**reference** | **String** | the reference assigned to the payment | [optional] 
+**billingAddress** | [**Address**](Address.md) |  | [optional] 
+**shopperIP** | **String** | the IP address of the shopper | [optional] 
+**merchantAccount** | **String** | the merchant account which will be used to process the payment | [optional] 
+**browserInfo** | [**BrowserInfo**](BrowserInfo.md) |  | [optional] 
+**shopperInteraction** | [**ShopperInteraction**](ShopperInteraction.md) |  | [optional] 
+**shopperEmail** | **String** | the email address of the shopper / customer | [optional] 
+**shopperReference** | **String** | a reference used to uniquely identify the shopper (e.g. user ID or account ID) | [optional] 
+**recurring** | [**Recurring**](Recurring.md) |  | [optional] 
+**shopperStatement** | **String** | the text to appear on the shopper&#39;s statement | [optional] 
+**fraudOffset** | **Number** | the offset that is added to the normal fraud score (positive or negative) | [optional] 
+**sessionId** | **String** |  | [optional] 
+**additionalAmount** | [**Amount**](Amount.md) |  | [optional] 
+**selectedRecurringDetailReference** | **String** | the recurringDetailReference you want to use for this payment | [optional] 
+**orderReference** | **String** | the order reference to link multiple partial payments | [optional] 
+**merchantOrderReference** | **String** | the reference to link multiple transactions to each other | [optional] 
+**dccQuote** | [**ForexQuote**](ForexQuote.md) |  | [optional] 
+**additionalData** | **Object** | a map of name/value pairs for passing in additional/industry-specific data | [optional] 
+**shopperName** | [**Name**](Name.md) |  | [optional] 
+**shopperLocale** | **String** | the combination of language code and country code to specify the language to be used in the payment | [optional] 
+**selectedBrand** | **String** | the selected brand how to process the payment for dual branded cards | [optional] 
+**deliveryAddress** | [**Address**](Address.md) |  | [optional] 
+**deliveryDate** | **Date** | the expected date of delivery or fulfillment | [optional] 
+**deviceFingerprint** | **String** |  | [optional] 
+**installments** | [**Installments**](Installments.md) |  | [optional] 
+**socialSecurityNumber** | **String** | the shopper&#39;s social security number | [optional] 
+**captureDelayHours** | **Number** | the number of hours delay between the authorisation and scheduled auto-capture | [optional] 
+**dateOfBirth** | **Date** | the shopper&#39;s date of birth | [optional] 
+**telephoneNumber** | **String** | the shopper&#39;s telephone number | [optional] 
+**mcc** | **String** | the mcc value that is required to process this payment | [optional] 
+**metadata** | **Object** | a map of key/value pairs of metadata sent by merchant | [optional] 
+
+
