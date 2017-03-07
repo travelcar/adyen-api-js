@@ -34,7 +34,7 @@
   /**
    * The ThreeDSecureData model module.
    * @module model/ThreeDSecureData
-   * @version 1.18.0
+   * @version 1.18.1
    */
 
   /**

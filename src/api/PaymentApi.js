@@ -31,7 +31,7 @@
   /**
    * Payment service.
    * @module api/PaymentApi
-   * @version 1.18.0
+   * @version 1.18.1
    */
 
   /**

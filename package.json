@@ -1,8 +1,8 @@
 {
   "name": "adyen-api-js",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "description": "Operations_about_payments_recurring_and_payout",
-  "license": "Unlicense",
+  "license": "Apache-2.0",
   "main": "src/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
@@ -14,5 +14,25 @@
     "mocha": "~2.3.4",
     "sinon": "1.17.3",
     "expect.js": "~0.3.1"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travelcar/adyen-api-js.git"
+  },
+  "keywords": [
+    "adyen",
+    "api",
+    "api-client",
+    "nodejs",
+    "swagger"
+  ],
+  "author": "Travelcar",
+  "bugs": {
+    "url": "https://github.com/travelcar/adyen-api-js/issues"
+  },
+  "homepage": "https://github.com/travelcar/adyen-api-js#readme"
 }
