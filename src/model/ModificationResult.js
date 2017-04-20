@@ -34,7 +34,7 @@
   /**
    * The ModificationResult model module.
    * @module model/ModificationResult
-   * @version 1.25.0
+   * @version 1.25.1
    */
 
   /**

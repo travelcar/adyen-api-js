@@ -31,7 +31,7 @@
   /**
    * Payout service.
    * @module api/PayoutApi
-   * @version 1.25.0
+   * @version 1.25.1
    */
 
   /**
@@ -76,7 +76,7 @@
       var returnType = ConfirmOrDeclineResult;
 
       return this.apiClient.callApi(
-        '/Payout/v18/confirm', 'POST',
+        '/Payout/v25/confirm', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -113,7 +113,7 @@
       var returnType = ConfirmOrDeclineResult;
 
       return this.apiClient.callApi(
-        '/Payout/v18/decline', 'POST',
+        '/Payout/v25/decline', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -150,7 +150,7 @@
       var returnType = StoreDetailAndSubmitResult;
 
       return this.apiClient.callApi(
-        '/Payout/v18/storeDetailAndSubmit', 'POST',
+        '/Payout/v25/storeDetailAndSubmit', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

@@ -31,7 +31,7 @@
   /**
    * Payment service.
    * @module api/PaymentApi
-   * @version 1.25.0
+   * @version 1.25.1
    */
 
   /**
@@ -76,7 +76,7 @@
       var returnType = PaymentResult;
 
       return this.apiClient.callApi(
-        '/Payment/v18/authorise', 'POST',
+        '/Payment/v25/authorise', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -113,7 +113,7 @@
       var returnType = PaymentResult;
 
       return this.apiClient.callApi(
-        '/Payment/v18/authorise3d', 'POST',
+        '/Payment/v25/authorise3d', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -150,7 +150,7 @@
       var returnType = ModificationResult;
 
       return this.apiClient.callApi(
-        '/Payment/v18/cancel', 'POST',
+        '/Payment/v25/cancel', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -187,7 +187,7 @@
       var returnType = ModificationResult;
 
       return this.apiClient.callApi(
-        '/Payment/v18/cancelOrRefund', 'POST',
+        '/Payment/v25/cancelOrRefund', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -224,7 +224,7 @@
       var returnType = ModificationResult;
 
       return this.apiClient.callApi(
-        '/Payment/v18/capture', 'POST',
+        '/Payment/v25/capture', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -261,7 +261,7 @@
       var returnType = ModificationResult;
 
       return this.apiClient.callApi(
-        '/Payment/v18/refund', 'POST',
+        '/Payment/v25/refund', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

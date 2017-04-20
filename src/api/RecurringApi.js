@@ -31,7 +31,7 @@
   /**
    * Recurring service.
    * @module api/RecurringApi
-   * @version 1.25.0
+   * @version 1.25.1
    */
 
   /**
@@ -76,7 +76,7 @@
       var returnType = DisableResult;
 
       return this.apiClient.callApi(
-        '/Recurring/v18/disable', 'POST',
+        '/Recurring/v25/disable', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -113,7 +113,7 @@
       var returnType = RecurringDetailsResult;
 
       return this.apiClient.callApi(
-        '/Recurring/v18/listRecurringDetails', 'POST',
+        '/Recurring/v25/listRecurringDetails', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

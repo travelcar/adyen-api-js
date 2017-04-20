@@ -34,7 +34,7 @@
   /**
    * The ModificationRequest model module.
    * @module model/ModificationRequest
-   * @version 1.25.0
+   * @version 1.25.1
    */
 
   /**

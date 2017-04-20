@@ -34,7 +34,7 @@
   /**
    * The StoreDetailAndSubmitResult model module.
    * @module model/StoreDetailAndSubmitResult
-   * @version 1.25.0
+   * @version 1.25.1
    */
 
   /**
