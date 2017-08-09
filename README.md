@@ -119,6 +119,7 @@ Class | Method | HTTP request | Description
  - [AdyenApiJs.Name](docs/Name.md)
  - [AdyenApiJs.NotificationRequest](docs/NotificationRequest.md)
  - [AdyenApiJs.NotificationRequestItem](docs/NotificationRequestItem.md)
+ - [AdyenApiJs.NotificationRequestItemDetails](docs/NotificationRequestItemDetails.md)
  - [AdyenApiJs.NotificationResult](docs/NotificationResult.md)
  - [AdyenApiJs.PaymentRequest](docs/PaymentRequest.md)
  - [AdyenApiJs.PaymentRequest3d](docs/PaymentRequest3d.md)

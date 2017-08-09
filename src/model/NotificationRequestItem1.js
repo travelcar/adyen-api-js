@@ -14,32 +14,32 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/NotificationRequestItemDetails'], factory);
+    define(['ApiClient', 'model/NotificationRequestItem'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./NotificationRequestItemDetails'));
+    module.exports = factory(require('../ApiClient'), require('./NotificationRequestItem'));
   } else {
     // Browser globals (root is window)
     if (!root.AdyenApiJs) {
       root.AdyenApiJs = {};
     }
-    root.AdyenApiJs.NotificationRequestItem = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.NotificationRequestItemDetails);
+    root.AdyenApiJs.NotificationRequestItem1 = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.NotificationRequestItem);
   }
-}(this, function(ApiClient, NotificationRequestItemDetails) {
+}(this, function(ApiClient, NotificationRequestItem) {
   'use strict';
 
 
 
 
   /**
-   * The NotificationRequestItem model module.
-   * @module model/NotificationRequestItem
+   * The NotificationRequestItem1 model module.
+   * @module model/NotificationRequestItem1
    * @version 1.25.2
    */
 
   /**
-   * Constructs a new <code>NotificationRequestItem</code>.
-   * @alias module:model/NotificationRequestItem
+   * Constructs a new <code>NotificationRequestItem1</code>.
+   * @alias module:model/NotificationRequestItem1
    * @class
    */
   var exports = function() {
@@ -49,38 +49,38 @@
   };
 
   /**
-   * Constructs a <code>NotificationRequestItem</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>NotificationRequestItem1</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/NotificationRequestItem} obj Optional instance to populate.
-   * @return {module:model/NotificationRequestItem} The populated <code>NotificationRequestItem</code> instance.
+   * @param {module:model/NotificationRequestItem1} obj Optional instance to populate.
+   * @return {module:model/NotificationRequestItem1} The populated <code>NotificationRequestItem1</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('NotificationRequestItem')) {
-        obj['NotificationRequestItem'] = NotificationRequestItemDetails.constructFromObject(data['NotificationRequestItem']);
+        obj['NotificationRequestItem'] = NotificationRequestItem.constructFromObject(data['NotificationRequestItem']);
       }
     }
     return obj;
   }
 
   /**
-   * @member {module:model/NotificationRequestItemDetails} NotificationRequestItem
+   * @member {module:model/NotificationRequestItem} NotificationRequestItem
    */
   exports.prototype['NotificationRequestItem'] = undefined;
 
 
   /**
-   * @return {module:model/NotificationRequestItemDetails}
+   * @return {module:model/NotificationRequestItem}
    */
   exports.prototype.getNotificationRequestItem = function() {
     return this['NotificationRequestItem'];
   }
 
   /**
-   * @param {module:model/NotificationRequestItemDetails} notificationRequestItem
+   * @param {module:model/NotificationRequestItem} notificationRequestItem
    */
   exports.prototype.setNotificationRequestItem = function(notificationRequestItem) {
     this['NotificationRequestItem'] = notificationRequestItem;

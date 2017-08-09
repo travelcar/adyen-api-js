@@ -42,7 +42,7 @@
    * @alias module:model/NotificationRequest
    * @class
    * @param live {Boolean} Informs about the origin of the notification, if true means the notification originated from the live environment, else if false so the notification originated from the test environment.
-   * @param notificationItems {module:model/NotificationRequestItem} 
+   * @param notificationItems {Array.<module:model/NotificationRequestItem>} 
    */
   var exports = function(live, notificationItems) {
     var _this = this;
@@ -66,7 +66,7 @@
         obj['live'] = ApiClient.convertToType(data['live'], 'Boolean');
       }
       if (data.hasOwnProperty('notificationItems')) {
-        obj['notificationItems'] = NotificationRequestItem.constructFromObject(data['notificationItems']);
+        obj['notificationItems'] = ApiClient.convertToType(data['notificationItems'], [NotificationRequestItem]);
       }
     }
     return obj;
@@ -78,7 +78,7 @@
    */
   exports.prototype['live'] = undefined;
   /**
-   * @member {module:model/NotificationRequestItem} notificationItems
+   * @member {Array.<module:model/NotificationRequestItem>} notificationItems
    */
   exports.prototype['notificationItems'] = undefined;
 
@@ -101,14 +101,14 @@
 
 
   /**
-   * @return {module:model/NotificationRequestItem}
+   * @return {Array.<module:model/NotificationRequestItem>}
    */
   exports.prototype.getNotificationItems = function() {
     return this['notificationItems'];
   }
 
   /**
-   * @param {module:model/NotificationRequestItem} notificationItems
+   * @param {Array.<module:model/NotificationRequestItem>} notificationItems
    */
   exports.prototype.setNotificationItems = function(notificationItems) {
     this['notificationItems'] = notificationItems;
