@@ -34,7 +34,7 @@
   /**
    * The Name model module.
    * @module model/Name
-   * @version 1.25.1
+   * @version 1.25.2
    */
 
   /**

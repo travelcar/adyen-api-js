@@ -34,7 +34,7 @@
   /**
    * The Recurring model module.
    * @module model/Recurring
-   * @version 1.25.1
+   * @version 1.25.2
    */
 
   /**

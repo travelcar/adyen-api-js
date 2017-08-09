@@ -31,7 +31,7 @@
   /**
    * Recurring service.
    * @module api/RecurringApi
-   * @version 1.25.1
+   * @version 1.25.2
    */
 
   /**

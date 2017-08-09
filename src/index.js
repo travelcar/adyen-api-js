@@ -14,12 +14,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Address', 'model/Amount', 'model/AuthenticationResponse', 'model/BankAccount', 'model/BrowserInfo', 'model/Card', 'model/ConfirmOrDeclineRequest', 'model/ConfirmOrDeclineResult', 'model/Contract', 'model/DirectoryResponse', 'model/DisableRequest', 'model/DisableResult', 'model/Error', 'model/ErrorType', 'model/ForexQuote', 'model/FraudCheckResult', 'model/FraudResult', 'model/Gender', 'model/Installments', 'model/ModificationRequest', 'model/ModificationResult', 'model/ModificationResultResponse', 'model/Name', 'model/PaymentRequest', 'model/PaymentRequest3d', 'model/PaymentResult', 'model/PayoutResultCodeType', 'model/Recurring', 'model/RecurringDetail', 'model/RecurringDetailReferenceType', 'model/RecurringDetailsRequest', 'model/RecurringDetailsResult', 'model/ResultCode', 'model/ShopperInteraction', 'model/StoreDetailAndSubmitRequest', 'model/StoreDetailAndSubmitResult', 'model/ThreeDSecureData', 'api/PaymentApi', 'api/PayoutApi', 'api/RecurringApi'], factory);
+    define(['ApiClient', 'model/Address', 'model/Amount', 'model/AuthenticationResponse', 'model/BankAccount', 'model/BrowserInfo', 'model/Card', 'model/ConfirmOrDeclineRequest', 'model/ConfirmOrDeclineResult', 'model/Contract', 'model/DirectoryResponse', 'model/DisableRequest', 'model/DisableResult', 'model/Error', 'model/ErrorType', 'model/EventCode', 'model/ForexQuote', 'model/FraudCheckResult', 'model/FraudResult', 'model/Gender', 'model/Installments', 'model/ModificationRequest', 'model/ModificationResult', 'model/ModificationResultResponse', 'model/Name', 'model/NotificationRequest', 'model/NotificationRequestItem', 'model/NotificationResult', 'model/PaymentRequest', 'model/PaymentRequest3d', 'model/PaymentResult', 'model/PayoutResultCodeType', 'model/Recurring', 'model/RecurringDetail', 'model/RecurringDetailReferenceType', 'model/RecurringDetailsRequest', 'model/RecurringDetailsResult', 'model/ResultCode', 'model/ShopperInteraction', 'model/StoreDetailAndSubmitRequest', 'model/StoreDetailAndSubmitResult', 'model/ThreeDSecureData', 'api/PaymentApi', 'api/PayoutApi', 'api/RecurringApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/Address'), require('./model/Amount'), require('./model/AuthenticationResponse'), require('./model/BankAccount'), require('./model/BrowserInfo'), require('./model/Card'), require('./model/ConfirmOrDeclineRequest'), require('./model/ConfirmOrDeclineResult'), require('./model/Contract'), require('./model/DirectoryResponse'), require('./model/DisableRequest'), require('./model/DisableResult'), require('./model/Error'), require('./model/ErrorType'), require('./model/ForexQuote'), require('./model/FraudCheckResult'), require('./model/FraudResult'), require('./model/Gender'), require('./model/Installments'), require('./model/ModificationRequest'), require('./model/ModificationResult'), require('./model/ModificationResultResponse'), require('./model/Name'), require('./model/PaymentRequest'), require('./model/PaymentRequest3d'), require('./model/PaymentResult'), require('./model/PayoutResultCodeType'), require('./model/Recurring'), require('./model/RecurringDetail'), require('./model/RecurringDetailReferenceType'), require('./model/RecurringDetailsRequest'), require('./model/RecurringDetailsResult'), require('./model/ResultCode'), require('./model/ShopperInteraction'), require('./model/StoreDetailAndSubmitRequest'), require('./model/StoreDetailAndSubmitResult'), require('./model/ThreeDSecureData'), require('./api/PaymentApi'), require('./api/PayoutApi'), require('./api/RecurringApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/Address'), require('./model/Amount'), require('./model/AuthenticationResponse'), require('./model/BankAccount'), require('./model/BrowserInfo'), require('./model/Card'), require('./model/ConfirmOrDeclineRequest'), require('./model/ConfirmOrDeclineResult'), require('./model/Contract'), require('./model/DirectoryResponse'), require('./model/DisableRequest'), require('./model/DisableResult'), require('./model/Error'), require('./model/ErrorType'), require('./model/EventCode'), require('./model/ForexQuote'), require('./model/FraudCheckResult'), require('./model/FraudResult'), require('./model/Gender'), require('./model/Installments'), require('./model/ModificationRequest'), require('./model/ModificationResult'), require('./model/ModificationResultResponse'), require('./model/Name'), require('./model/NotificationRequest'), require('./model/NotificationRequestItem'), require('./model/NotificationResult'), require('./model/PaymentRequest'), require('./model/PaymentRequest3d'), require('./model/PaymentResult'), require('./model/PayoutResultCodeType'), require('./model/Recurring'), require('./model/RecurringDetail'), require('./model/RecurringDetailReferenceType'), require('./model/RecurringDetailsRequest'), require('./model/RecurringDetailsResult'), require('./model/ResultCode'), require('./model/ShopperInteraction'), require('./model/StoreDetailAndSubmitRequest'), require('./model/StoreDetailAndSubmitResult'), require('./model/ThreeDSecureData'), require('./api/PaymentApi'), require('./api/PayoutApi'), require('./api/RecurringApi'));
   }
-}(function(ApiClient, Address, Amount, AuthenticationResponse, BankAccount, BrowserInfo, Card, ConfirmOrDeclineRequest, ConfirmOrDeclineResult, Contract, DirectoryResponse, DisableRequest, DisableResult, Error, ErrorType, ForexQuote, FraudCheckResult, FraudResult, Gender, Installments, ModificationRequest, ModificationResult, ModificationResultResponse, Name, PaymentRequest, PaymentRequest3d, PaymentResult, PayoutResultCodeType, Recurring, RecurringDetail, RecurringDetailReferenceType, RecurringDetailsRequest, RecurringDetailsResult, ResultCode, ShopperInteraction, StoreDetailAndSubmitRequest, StoreDetailAndSubmitResult, ThreeDSecureData, PaymentApi, PayoutApi, RecurringApi) {
+}(function(ApiClient, Address, Amount, AuthenticationResponse, BankAccount, BrowserInfo, Card, ConfirmOrDeclineRequest, ConfirmOrDeclineResult, Contract, DirectoryResponse, DisableRequest, DisableResult, Error, ErrorType, EventCode, ForexQuote, FraudCheckResult, FraudResult, Gender, Installments, ModificationRequest, ModificationResult, ModificationResultResponse, Name, NotificationRequest, NotificationRequestItem, NotificationResult, PaymentRequest, PaymentRequest3d, PaymentResult, PayoutResultCodeType, Recurring, RecurringDetail, RecurringDetailReferenceType, RecurringDetailsRequest, RecurringDetailsResult, ResultCode, ShopperInteraction, StoreDetailAndSubmitRequest, StoreDetailAndSubmitResult, ThreeDSecureData, PaymentApi, PayoutApi, RecurringApi) {
   'use strict';
 
   /**
@@ -51,7 +51,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 1.25.1
+   * @version 1.25.2
    */
   var exports = {
     /**
@@ -130,6 +130,11 @@
      */
     ErrorType: ErrorType,
     /**
+     * The EventCode model constructor.
+     * @property {module:model/EventCode}
+     */
+    EventCode: EventCode,
+    /**
      * The ForexQuote model constructor.
      * @property {module:model/ForexQuote}
      */
@@ -174,6 +179,21 @@
      * @property {module:model/Name}
      */
     Name: Name,
+    /**
+     * The NotificationRequest model constructor.
+     * @property {module:model/NotificationRequest}
+     */
+    NotificationRequest: NotificationRequest,
+    /**
+     * The NotificationRequestItem model constructor.
+     * @property {module:model/NotificationRequestItem}
+     */
+    NotificationRequestItem: NotificationRequestItem,
+    /**
+     * The NotificationResult model constructor.
+     * @property {module:model/NotificationResult}
+     */
+    NotificationResult: NotificationResult,
     /**
      * The PaymentRequest model constructor.
      * @property {module:model/PaymentRequest}
