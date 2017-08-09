@@ -34,7 +34,7 @@
   /**
    * The NotificationResult model module.
    * @module model/NotificationResult
-   * @version 1.25.2
+   * @version 1.25.3
    */
 
   /**
