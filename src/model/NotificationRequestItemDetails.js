@@ -34,7 +34,7 @@
   /**
    * The NotificationRequestItemDetails model module.
    * @module model/NotificationRequestItemDetails
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**

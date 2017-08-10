@@ -34,7 +34,7 @@
   /**
    * The Card model module.
    * @module model/Card
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**

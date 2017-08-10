@@ -54,74 +54,8 @@
       //expect(instance).to.be.a(AdyenApiJs.NotificationRequestItem);
     });
 
-    it('should have the property additionalData (base name: "additionalData")', function() {
-      // uncomment below and update the code to test the property additionalData
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property pspReference (base name: "pspReference")', function() {
-      // uncomment below and update the code to test the property pspReference
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property eventCode (base name: "eventCode")', function() {
-      // uncomment below and update the code to test the property eventCode
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property eventDate (base name: "eventDate")', function() {
-      // uncomment below and update the code to test the property eventDate
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property merchantAccountCode (base name: "merchantAccountCode")', function() {
-      // uncomment below and update the code to test the property merchantAccountCode
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property operations (base name: "operations")', function() {
-      // uncomment below and update the code to test the property operations
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property merchantReference (base name: "merchantReference")', function() {
-      // uncomment below and update the code to test the property merchantReference
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property originalReference (base name: "originalReference")', function() {
-      // uncomment below and update the code to test the property originalReference
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property paymentMethod (base name: "paymentMethod")', function() {
-      // uncomment below and update the code to test the property paymentMethod
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property reason (base name: "reason")', function() {
-      // uncomment below and update the code to test the property reason
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property success (base name: "success")', function() {
-      // uncomment below and update the code to test the property success
+    it('should have the property notificationRequestItem (base name: "NotificationRequestItem")', function() {
+      // uncomment below and update the code to test the property notificationRequestItem
       //var instane = new AdyenApiJs.NotificationRequestItem();
       //expect(instance).to.be();
     });

@@ -34,7 +34,7 @@
   /**
    * The PaymentResult model module.
    * @module model/PaymentResult
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**

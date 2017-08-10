@@ -34,7 +34,7 @@
   /**
    * The ConfirmOrDeclineRequest model module.
    * @module model/ConfirmOrDeclineRequest
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**

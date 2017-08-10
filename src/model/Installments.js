@@ -34,7 +34,7 @@
   /**
    * The Installments model module.
    * @module model/Installments
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**

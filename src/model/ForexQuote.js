@@ -34,7 +34,7 @@
   /**
    * The ForexQuote model module.
    * @module model/ForexQuote
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**

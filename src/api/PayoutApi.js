@@ -31,7 +31,7 @@
   /**
    * Payout service.
    * @module api/PayoutApi
-   * @version 1.25.3
+   * @version 1.25.4
    */
 
   /**
