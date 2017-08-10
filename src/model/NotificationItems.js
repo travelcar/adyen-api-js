@@ -23,7 +23,7 @@
     if (!root.AdyenApiJs) {
       root.AdyenApiJs = {};
     }
-    root.AdyenApiJs.NotificationRequestItem = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.NotificationRequestItemDetails);
+    root.AdyenApiJs.NotificationItems = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.NotificationRequestItemDetails);
   }
 }(this, function(ApiClient, NotificationRequestItemDetails) {
   'use strict';
@@ -32,14 +32,14 @@
 
 
   /**
-   * The NotificationRequestItem model module.
-   * @module model/NotificationRequestItem
+   * The NotificationItems model module.
+   * @module model/NotificationItems
    * @version 1.25.4
    */
 
   /**
-   * Constructs a new <code>NotificationRequestItem</code>.
-   * @alias module:model/NotificationRequestItem
+   * Constructs a new <code>NotificationItems</code>.
+   * @alias module:model/NotificationItems
    * @class
    */
   var exports = function() {
@@ -49,11 +49,11 @@
   };
 
   /**
-   * Constructs a <code>NotificationRequestItem</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>NotificationItems</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/NotificationRequestItem} obj Optional instance to populate.
-   * @return {module:model/NotificationRequestItem} The populated <code>NotificationRequestItem</code> instance.
+   * @param {module:model/NotificationItems} obj Optional instance to populate.
+   * @return {module:model/NotificationItems} The populated <code>NotificationItems</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {

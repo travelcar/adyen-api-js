@@ -1,4 +1,4 @@
-# AdyenApiJs.NotificationRequestItem
+# AdyenApiJs.NotificationItems
 
 ## Properties
 Name | Type | Description | Notes

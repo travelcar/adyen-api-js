@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new AdyenApiJs.NotificationRequestItem();
+    instance = new AdyenApiJs.NotificationItems();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,16 +47,16 @@
       object[property] = value;
   }
 
-  describe('NotificationRequestItem', function() {
-    it('should create an instance of NotificationRequestItem', function() {
-      // uncomment below and update the code to test NotificationRequestItem
-      //var instane = new AdyenApiJs.NotificationRequestItem();
-      //expect(instance).to.be.a(AdyenApiJs.NotificationRequestItem);
+  describe('NotificationItems', function() {
+    it('should create an instance of NotificationItems', function() {
+      // uncomment below and update the code to test NotificationItems
+      //var instane = new AdyenApiJs.NotificationItems();
+      //expect(instance).to.be.a(AdyenApiJs.NotificationItems);
     });
 
     it('should have the property notificationRequestItem (base name: "NotificationRequestItem")', function() {
       // uncomment below and update the code to test the property notificationRequestItem
-      //var instane = new AdyenApiJs.NotificationRequestItem();
+      //var instane = new AdyenApiJs.NotificationItems();
       //expect(instance).to.be();
     });
 

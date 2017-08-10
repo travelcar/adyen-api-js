@@ -14,18 +14,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/NotificationRequestItem'], factory);
+    define(['ApiClient', 'model/NotificationItems'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./NotificationRequestItem'));
+    module.exports = factory(require('../ApiClient'), require('./NotificationItems'));
   } else {
     // Browser globals (root is window)
     if (!root.AdyenApiJs) {
       root.AdyenApiJs = {};
     }
-    root.AdyenApiJs.NotificationRequest = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.NotificationRequestItem);
+    root.AdyenApiJs.NotificationRequest = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.NotificationItems);
   }
-}(this, function(ApiClient, NotificationRequestItem) {
+}(this, function(ApiClient, NotificationItems) {
   'use strict';
 
 
@@ -42,7 +42,7 @@
    * @alias module:model/NotificationRequest
    * @class
    * @param live {Boolean} Informs about the origin of the notification, if true means the notification originated from the live environment, else if false so the notification originated from the test environment.
-   * @param notificationItems {Array.<module:model/NotificationRequestItem>} 
+   * @param notificationItems {Array.<module:model/NotificationItems>} 
    */
   var exports = function(live, notificationItems) {
     var _this = this;
@@ -66,7 +66,7 @@
         obj['live'] = ApiClient.convertToType(data['live'], 'Boolean');
       }
       if (data.hasOwnProperty('notificationItems')) {
-        obj['notificationItems'] = ApiClient.convertToType(data['notificationItems'], [NotificationRequestItem]);
+        obj['notificationItems'] = ApiClient.convertToType(data['notificationItems'], [NotificationItems]);
       }
     }
     return obj;
@@ -78,7 +78,7 @@
    */
   exports.prototype['live'] = undefined;
   /**
-   * @member {Array.<module:model/NotificationRequestItem>} notificationItems
+   * @member {Array.<module:model/NotificationItems>} notificationItems
    */
   exports.prototype['notificationItems'] = undefined;
 
@@ -101,14 +101,14 @@
 
 
   /**
-   * @return {Array.<module:model/NotificationRequestItem>}
+   * @return {Array.<module:model/NotificationItems>}
    */
   exports.prototype.getNotificationItems = function() {
     return this['notificationItems'];
   }
 
   /**
-   * @param {Array.<module:model/NotificationRequestItem>} notificationItems
+   * @param {Array.<module:model/NotificationItems>} notificationItems
    */
   exports.prototype.setNotificationItems = function(notificationItems) {
     this['notificationItems'] = notificationItems;
