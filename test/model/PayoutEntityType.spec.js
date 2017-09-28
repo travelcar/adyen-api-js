@@ -30,7 +30,6 @@
   var instance;
 
   beforeEach(function() {
-    instance = new AdyenApiJs.Installments();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,17 +48,11 @@
       object[property] = value;
   }
 
-  describe('Installments', function() {
-    it('should create an instance of Installments', function() {
-      // uncomment below and update the code to test Installments
-      //var instane = new AdyenApiJs.Installments();
-      //expect(instance).to.be.a(AdyenApiJs.Installments);
-    });
-
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new AdyenApiJs.Installments();
-      //expect(instance).to.be();
+  describe('PayoutEntityType', function() {
+    it('should create an instance of PayoutEntityType', function() {
+      // uncomment below and update the code to test PayoutEntityType
+      //var instane = new AdyenApiJs.PayoutEntityType();
+      //expect(instance).to.be.a(AdyenApiJs.PayoutEntityType);
     });
 
   });

@@ -4,12 +4,12 @@ All URIs are relative to *https://pal-test.adyen.com/pal/servlet*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authorise**](PaymentApi.md#authorise) | **POST** /Payment/v25/authorise | Creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later. While for cards an authorised payment can be captured later, non-card methods typically don&#39;t support this and will automatically capture as part of the authorisation.
-[**authorise3d**](PaymentApi.md#authorise3d) | **POST** /Payment/v25/authorise3d | For an authenticated 3-D secure session, creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later.
-[**cancel**](PaymentApi.md#cancel) | **POST** /Payment/v25/cancel | Cancels a payment authorisation
-[**cancelrefund**](PaymentApi.md#cancelrefund) | **POST** /Payment/v25/cancelOrRefund | Disable a stored payment detail
-[**capture**](PaymentApi.md#capture) | **POST** /Payment/v25/capture | Captures a payment authorisation
-[**refund**](PaymentApi.md#refund) | **POST** /Payment/v25/refund | Refunds a payment
+[**authorise**](PaymentApi.md#authorise) | **POST** /Payment/v30/authorise | Creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later. While for cards an authorised payment can be captured later, non-card methods typically don&#39;t support this and will automatically capture as part of the authorisation.
+[**authorise3d**](PaymentApi.md#authorise3d) | **POST** /Payment/v30/authorise3d | For an authenticated 3-D secure session, creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later.
+[**cancel**](PaymentApi.md#cancel) | **POST** /Payment/v30/cancel | Cancels a payment authorisation
+[**cancelrefund**](PaymentApi.md#cancelrefund) | **POST** /Payment/v30/cancelOrRefund | Disable a stored payment detail
+[**capture**](PaymentApi.md#capture) | **POST** /Payment/v30/capture | Captures a payment authorisation
+[**refund**](PaymentApi.md#refund) | **POST** /Payment/v30/refund | Refunds a payment
 
 
 <a name="authorise"></a>
@@ -23,7 +23,7 @@ Creates a payment authorisation
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -72,7 +72,7 @@ Completes a 3-D Secure payment authorisation
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -121,7 +121,7 @@ Cancels the authorisation hold on a payment, returning a unique reference for th
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -170,7 +170,7 @@ Performs a \&quot;cancel\&quot; on a payment if it has not yet been captured or 
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -219,7 +219,7 @@ Captures the authorisation hold on a payment, returning a unique reference for t
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -268,7 +268,7 @@ Refunds a payment which has previously been captured, returning a unique referen
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];

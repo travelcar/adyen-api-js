@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**firstName** | **String** | the first name | 
+**gender** | [**Gender**](Gender.md) |  | 
 **infix** | **String** | the infix | [optional] 
-**gender** | [**Gender**](Gender.md) |  | [optional] 
-**lastName** | **String** | the last name | [optional] 
-**firstName** | **String** | the first name | [optional] 
+**lastName** | **String** | the last name | 
 
 

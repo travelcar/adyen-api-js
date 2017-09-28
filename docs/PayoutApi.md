@@ -4,9 +4,9 @@ All URIs are relative to *https://pal-test.adyen.com/pal/servlet*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**confirm**](PayoutApi.md#confirm) | **POST** /Payout/v25/confirm | Confirm a payout
-[**decline**](PayoutApi.md#decline) | **POST** /Payout/v25/decline | Decline a payout
-[**storeDetailAndSubmit**](PayoutApi.md#storeDetailAndSubmit) | **POST** /Payout/v25/storeDetailAndSubmit | Store the payouts details and make a payout request
+[**confirm**](PayoutApi.md#confirm) | **POST** /Payout/v30/confirm | Confirm a payout
+[**decline**](PayoutApi.md#decline) | **POST** /Payout/v30/decline | Decline a payout
+[**storeDetailAndSubmit**](PayoutApi.md#storeDetailAndSubmit) | **POST** /Payout/v30/storeDetailAndSubmitThirdParty | Store the payouts details and make a payout request
 
 
 <a name="confirm"></a>
@@ -20,7 +20,7 @@ You can decide over a period of seven days to proceed a payout, after which the 
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -69,7 +69,7 @@ You can decide over a period of seven days to cancel a payout, after which the p
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -118,7 +118,7 @@ Besides storing payout details using the normal payment flow, the payout web ser
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];

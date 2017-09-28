@@ -4,8 +4,8 @@ All URIs are relative to *https://pal-test.adyen.com/pal/servlet*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**disable**](RecurringApi.md#disable) | **POST** /Recurring/v25/disable | Disable a stored payment detail
-[**listRecurringDetails**](RecurringApi.md#listRecurringDetails) | **POST** /Recurring/v25/listRecurringDetails | Retrieves stored payment details for a shopper
+[**disable**](RecurringApi.md#disable) | **POST** /Recurring/v30/disable | Disable a stored payment detail
+[**listRecurringDetails**](RecurringApi.md#listRecurringDetails) | **POST** /Recurring/v30/listRecurringDetails | Retrieves stored payment details for a shopper
 
 
 <a name="disable"></a>
@@ -19,7 +19,7 @@ Disable a stored payment detail
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];
@@ -68,7 +68,7 @@ Lists the stored payment details for a shopper, if available. The recurring deta
 ### Example
 ```javascript
 var AdyenApiJs = require('adyen-api-js');
-var defaultClient = AdyenApiJs.ApiClient.default;
+var defaultClient = AdyenApiJs.ApiClient.instance;
 
 // Configure HTTP basic authorization: auth
 var auth = defaultClient.authentications['auth'];

@@ -25,43 +25,33 @@
     if (!root.AdyenApiJs) {
       root.AdyenApiJs = {};
     }
-    root.AdyenApiJs.DirectoryResponse = factory(root.AdyenApiJs.ApiClient);
+    root.AdyenApiJs.PayoutEntityType = factory(root.AdyenApiJs.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
 
   /**
-   * Enum class DirectoryResponse.
+   * Enum class PayoutEntityType.
    * @enum {}
    * @readonly
    */
   var exports = {
     /**
-     * value: "Y"
+     * value: "NaturalPerson"
      * @const
      */
-    "Y": "Y",
+    "NaturalPerson": "NaturalPerson",
     /**
-     * value: "N"
+     * value: "Company"
      * @const
      */
-    "N": "N",
-    /**
-     * value: "U"
-     * @const
-     */
-    "U": "U",
-    /**
-     * value: "E"
-     * @const
-     */
-    "E": "E"  };
+    "Company": "Company"  };
 
   /**
-   * Returns a <code>DirectoryResponse</code> enum value from a Javascript object name.
+   * Returns a <code>PayoutEntityType</code> enum value from a Javascript object name.
    * @param {Object} data The plain JavaScript object containing the name of the enum value.
-   * @return {module:model/DirectoryResponse} The enum <code>DirectoryResponse</code> value.
+   * @return {module:model/PayoutEntityType} The enum <code>PayoutEntityType</code> value.
    */
   exports.constructFromObject = function(object) {
     return object;

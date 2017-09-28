@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **billingAddress** | [**Address**](Address.md) |  | [optional] 
 **additionalData** | **Object** |  | [optional] 
 **shopperName** | [**Name**](Name.md) |  | [optional] 
-**socialSecurityNumber** | **String** |  | [optional] 
+**socialSecurityNumber** | **String** | the shopper&#39;s social security number | [optional] 
 **recurringDetailReference** | **String** | The reference that uniquely identifies the recurring detail | [optional] 
 **bank** | [**BankAccount**](BankAccount.md) |  | [optional] 
 **alias** | **String** |  | [optional] 
