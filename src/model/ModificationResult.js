@@ -36,7 +36,7 @@
   /**
    * The ModificationResult model module.
    * @module model/ModificationResult
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The DisableResult model module.
    * @module model/DisableResult
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**

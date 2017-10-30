@@ -33,11 +33,11 @@
   /**
    * Payment service.
    * @module api/PaymentApi
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
-   * Constructs a new PaymentApi. 
+   * Constructs a new PaymentApi.
    * @alias module:api/PaymentApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use,

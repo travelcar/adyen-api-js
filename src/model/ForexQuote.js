@@ -36,7 +36,7 @@
   /**
    * The ForexQuote model module.
    * @module model/ForexQuote
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
@@ -44,8 +44,8 @@
    * the forex quote as returned in the response of the forex service
    * @alias module:model/ForexQuote
    * @class
-   * @param validTill {Date} 
-   * @param basePoints {Number} 
+   * @param validTill {Date}
+   * @param basePoints {Number}
    */
   var exports = function(validTill, basePoints) {
     var _this = this;

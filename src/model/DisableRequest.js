@@ -36,7 +36,7 @@
   /**
    * The DisableRequest model module.
    * @module model/DisableRequest
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**

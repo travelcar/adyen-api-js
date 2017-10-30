@@ -36,7 +36,7 @@
   /**
    * The Recurring model module.
    * @module model/Recurring
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
@@ -44,7 +44,7 @@
    * the recurring properties of the payment
    * @alias module:model/Recurring
    * @class
-   * @param contract {module:model/Contract} 
+   * @param contract {module:model/Contract}
    */
   var exports = function(contract) {
     var _this = this;

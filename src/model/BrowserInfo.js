@@ -36,7 +36,7 @@
   /**
    * The BrowserInfo model module.
    * @module model/BrowserInfo
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**

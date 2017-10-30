@@ -36,7 +36,7 @@
   /**
    * The Name model module.
    * @module model/Name
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
@@ -45,7 +45,7 @@
    * @alias module:model/Name
    * @class
    * @param firstName {String} the first name
-   * @param gender {module:model/Gender} 
+   * @param gender {module:model/Gender}
    * @param lastName {String} the last name
    */
   var exports = function(firstName, gender, lastName) {

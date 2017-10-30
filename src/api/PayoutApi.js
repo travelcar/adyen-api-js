@@ -33,11 +33,11 @@
   /**
    * Payout service.
    * @module api/PayoutApi
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
-   * Constructs a new PayoutApi. 
+   * Constructs a new PayoutApi.
    * @alias module:api/PayoutApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -78,7 +78,7 @@
       var returnType = ConfirmOrDeclineResult;
 
       return this.apiClient.callApi(
-        '/Payout/v30/confirm', 'POST',
+        '/Payout/v30/confirmThirdParty', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -128,7 +128,7 @@
       var returnType = ConfirmOrDeclineResult;
 
       return this.apiClient.callApi(
-        '/Payout/v30/decline', 'POST',
+        '/Payout/v30/declineThirdParty', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

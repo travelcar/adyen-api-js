@@ -36,7 +36,7 @@
   /**
    * The PaymentRequest model module.
    * @module model/PaymentRequest
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**

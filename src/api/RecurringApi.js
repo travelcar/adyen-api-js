@@ -33,11 +33,11 @@
   /**
    * Recurring service.
    * @module api/RecurringApi
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
-   * Constructs a new RecurringApi. 
+   * Constructs a new RecurringApi.
    * @alias module:api/RecurringApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use,

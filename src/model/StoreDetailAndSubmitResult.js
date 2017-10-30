@@ -36,7 +36,7 @@
   /**
    * The StoreDetailAndSubmitResult model module.
    * @module model/StoreDetailAndSubmitResult
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/StoreDetailAndSubmitResult
    * @class
    * @param pspReference {String} the unique identifier assigned to this modification. This reference is the pspReference of the payout.
-   * @param resultCode {String} In case of success, it is payout-submit-received / payout-confirm-received / payout-decline-received. In case of an error, an informational message is returned.
+   * @param resultCode {String} In case of success, it is payout-submit-received. In case of an error, an informational message is returned.
    */
   var exports = function(pspReference, resultCode) {
     var _this = this;
@@ -93,7 +93,7 @@
    */
   exports.prototype['pspReference'] = undefined;
   /**
-   * In case of success, it is payout-submit-received / payout-confirm-received / payout-decline-received. In case of an error, an informational message is returned.
+   * In case of success, it is payout-submit-received. In case of an error, an informational message is returned.
    * @member {String} resultCode
    */
   exports.prototype['resultCode'] = undefined;
@@ -139,7 +139,7 @@
 
 
   /**
-   * Returns In case of success, it is payout-submit-received / payout-confirm-received / payout-decline-received. In case of an error, an informational message is returned.
+   * Returns In case of success, it is payout-submit-received. In case of an error, an informational message is returned.
    * @return {String}
    */
   exports.prototype.getResultCode = function() {
@@ -147,8 +147,8 @@
   }
 
   /**
-   * Sets In case of success, it is payout-submit-received / payout-confirm-received / payout-decline-received. In case of an error, an informational message is returned.
-   * @param {String} resultCode In case of success, it is payout-submit-received / payout-confirm-received / payout-decline-received. In case of an error, an informational message is returned.
+   * Sets In case of success, it is payout-submit-received. In case of an error, an informational message is returned.
+   * @param {String} resultCode In case of success, it is payout-submit-received. In case of an error, an informational message is returned.
    */
   exports.prototype.setResultCode = function(resultCode) {
     this['resultCode'] = resultCode;

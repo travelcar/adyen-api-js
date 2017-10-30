@@ -36,21 +36,21 @@
   /**
    * The StoreDetailAndSubmitRequest model module.
    * @module model/StoreDetailAndSubmitRequest
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
    * Constructs a new <code>StoreDetailAndSubmitRequest</code>.
    * @alias module:model/StoreDetailAndSubmitRequest
    * @class
-   * @param amount {module:model/Amount} 
-   * @param entityType {module:model/PayoutEntityType} 
+   * @param amount {module:model/Amount}
+   * @param entityType {module:model/PayoutEntityType}
    * @param merchantAccount {String} the merchant account which will be used for processing this request
    * @param nationality {String} The shopper's nationality, A valid value is an ISO 2-character country code (e.g. 'NL').
-   * @param recurring {module:model/Recurring} 
+   * @param recurring {module:model/Recurring}
    * @param reference {String} the reference assigned to the payment
    * @param shopperEmail {String} the email address of the shopper / customer
-   * @param shopperName {module:model/Name} 
+   * @param shopperName {module:model/Name}
    * @param shopperReference {String} a reference you use to uniquely identify the shopper (e.g. user ID or account ID)
    */
   var exports = function(amount, entityType, merchantAccount, nationality, recurring, reference, shopperEmail, shopperName, shopperReference) {

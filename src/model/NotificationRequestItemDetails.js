@@ -36,16 +36,16 @@
   /**
    * The NotificationRequestItemDetails model module.
    * @module model/NotificationRequestItemDetails
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
    * Constructs a new <code>NotificationRequestItemDetails</code>.
    * @alias module:model/NotificationRequestItemDetails
    * @class
-   * @param amount {module:model/Amount} 
+   * @param amount {module:model/Amount}
    * @param pspReference {String} the unique identifier associated with the transaction/the request
-   * @param eventCode {module:model/EventCode} 
+   * @param eventCode {module:model/EventCode}
    * @param eventDate {Date} The time when the event was generated.
    * @param merchantAccountCode {String} The merchant account identifier used in the transaction the notification item refers to.
    * @param operations {Array.<module:model/NotificationRequestItemDetails.OperationsEnum>} This field holds a list of the modification operations supported by the transaction the notification item refers to.

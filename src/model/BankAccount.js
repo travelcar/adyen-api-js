@@ -36,7 +36,7 @@
   /**
    * The BankAccount model module.
    * @module model/BankAccount
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**

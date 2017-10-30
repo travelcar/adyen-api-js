@@ -36,7 +36,7 @@
   /**
    * The NotificationRequest model module.
    * @module model/NotificationRequest
-   * @version 1.30.0
+   * @version 1.30.1
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/NotificationRequest
    * @class
    * @param live {Boolean} Informs about the origin of the notification, if true means the notification originated from the live environment, else if false so the notification originated from the test environment.
-   * @param notificationItems {Array.<module:model/NotificationItems>} 
+   * @param notificationItems {Array.<module:model/NotificationItems>}
    */
   var exports = function(live, notificationItems) {
     var _this = this;

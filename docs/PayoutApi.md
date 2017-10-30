@@ -4,8 +4,8 @@ All URIs are relative to *https://pal-test.adyen.com/pal/servlet*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**confirm**](PayoutApi.md#confirm) | **POST** /Payout/v30/confirm | Confirm a payout
-[**decline**](PayoutApi.md#decline) | **POST** /Payout/v30/decline | Decline a payout
+[**confirm**](PayoutApi.md#confirm) | **POST** /Payout/v30/confirmThirdParty | Confirm a payout
+[**decline**](PayoutApi.md#decline) | **POST** /Payout/v30/declineThirdParty | Decline a payout
 [**storeDetailAndSubmit**](PayoutApi.md#storeDetailAndSubmit) | **POST** /Payout/v30/storeDetailAndSubmitThirdParty | Store the payouts details and make a payout request
 
 
