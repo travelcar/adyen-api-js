@@ -4,21 +4,71 @@ All URIs are relative to *https://pal-test.adyen.com/pal/servlet*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authorise**](PaymentApi.md#authorise) | **POST** /Payment/v30/authorise | Creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later. While for cards an authorised payment can be captured later, non-card methods typically don&#39;t support this and will automatically capture as part of the authorisation.
-[**authorise3d**](PaymentApi.md#authorise3d) | **POST** /Payment/v30/authorise3d | For an authenticated 3-D secure session, creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later.
+[**adjustAuthorisation**](PaymentApi.md#adjustAuthorisation) | **POST** /Payment/v30/adjustAuthorisation | Increase or decrease the authorised amount
+[**authorise**](PaymentApi.md#authorise) | **POST** /Payment/v30/authorise | Creates a payment authorisation
+[**authorise3d**](PaymentApi.md#authorise3d) | **POST** /Payment/v30/authorise3d | Completes a 3-D Secure payment authorisation
 [**cancel**](PaymentApi.md#cancel) | **POST** /Payment/v30/cancel | Cancels a payment authorisation
 [**cancelrefund**](PaymentApi.md#cancelrefund) | **POST** /Payment/v30/cancelOrRefund | Disable a stored payment detail
 [**capture**](PaymentApi.md#capture) | **POST** /Payment/v30/capture | Captures a payment authorisation
 [**refund**](PaymentApi.md#refund) | **POST** /Payment/v30/refund | Refunds a payment
 
 
+<a name="adjustAuthorisation"></a>
+# **adjustAuthorisation**
+> ModificationResult adjustAuthorisation(modificationRequest)
+
+Increase or decrease the authorised amount
+
+Allows you to increase or decrease the authorised amount after the initial authorisation has taken place. This functionality enables tipping, improving the chances your authorisation will be valid, charging the shopper when they have already left the merchant premises, etc.
+
+### Example
+```javascript
+var AdyenApiJs = require('adyen-api-js');
+var defaultClient = AdyenApiJs.ApiClient.instance;
+
+// Configure HTTP basic authorization: auth
+var auth = defaultClient.authentications['auth'];
+auth.username = 'YOUR USERNAME';
+auth.password = 'YOUR PASSWORD';
+
+var apiInstance = new AdyenApiJs.PaymentApi();
+
+var modificationRequest = new AdyenApiJs.ModificationRequest(); // ModificationRequest | The Modification Request
+
+apiInstance.adjustAuthorisation(modificationRequest).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **modificationRequest** | [**ModificationRequest**](ModificationRequest.md)| The Modification Request | 
+
+### Return type
+
+[**ModificationResult**](ModificationResult.md)
+
+### Authorization
+
+[auth](../README.md#auth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="authorise"></a>
 # **authorise**
 > PaymentResult authorise(paymentRequest)
 
-Creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later. While for cards an authorised payment can be captured later, non-card methods typically don&#39;t support this and will automatically capture as part of the authorisation.
-
 Creates a payment authorisation
+
+Creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later. While for cards an authorised payment can be captured later, non-card methods typically don&#39;t support this and will automatically capture as part of the authorisation.
 
 ### Example
 ```javascript
@@ -65,9 +115,9 @@ Name | Type | Description  | Notes
 # **authorise3d**
 > PaymentResult authorise3d(paymentRequest3d)
 
-For an authenticated 3-D secure session, creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later.
-
 Completes a 3-D Secure payment authorisation
+
+For an authenticated 3-D secure session, creates a payment with a unique reference (pspReference) and attempts to obtain an authorisation hold, which can be \&quot;captured\&quot; or \&quot;cancelled\&quot; later.
 
 ### Example
 ```javascript

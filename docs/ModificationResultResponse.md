@@ -11,4 +11,6 @@
 
 * `[cancelOrRefund-received]` (value: `"[cancelOrRefund-received]"`)
 
+* `[adjustAuthorisation-received]` (value: `"[adjustAuthorisation-received]"`)
+
 

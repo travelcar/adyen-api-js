@@ -25,7 +25,7 @@
     if (!root.AdyenApiJs) {
       root.AdyenApiJs = {};
     }
-    root.AdyenApiJs.ModificationRequest = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.Amount);
+    root.AdyenApiJs.AdjustAuthorisationModificationRequest = factory(root.AdyenApiJs.ApiClient, root.AdyenApiJs.Amount);
   }
 }(this, function(ApiClient, Amount) {
   'use strict';
@@ -34,34 +34,35 @@
 
 
   /**
-   * The ModificationRequest model module.
-   * @module model/ModificationRequest
+   * The AdjustAuthorisationModificationRequest model module.
+   * @module model/AdjustAuthorisationModificationRequest
    * @version 1.30.2
    */
 
   /**
-   * Constructs a new <code>ModificationRequest</code>.
-   * @alias module:model/ModificationRequest
+   * Constructs a new <code>AdjustAuthorisationModificationRequest</code>.
+   * @alias module:model/AdjustAuthorisationModificationRequest
    * @class
    * @param merchantAccount {String} the merchant account which will be used to process the payment
+   * @param modificationAmount {module:model/Amount} 
    * @param originalReference {String} the pspreference of the payment to modify
    */
-  var exports = function(merchantAccount, originalReference) {
+  var exports = function(merchantAccount, modificationAmount, originalReference) {
     var _this = this;
 
     _this['merchantAccount'] = merchantAccount;
-
+    _this['modificationAmount'] = modificationAmount;
     _this['originalReference'] = originalReference;
 
 
   };
 
   /**
-   * Constructs a <code>ModificationRequest</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>AdjustAuthorisationModificationRequest</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ModificationRequest} obj Optional instance to populate.
-   * @return {module:model/ModificationRequest} The populated <code>ModificationRequest</code> instance.
+   * @param {module:model/AdjustAuthorisationModificationRequest} obj Optional instance to populate.
+   * @return {module:model/AdjustAuthorisationModificationRequest} The populated <code>AdjustAuthorisationModificationRequest</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
