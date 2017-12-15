@@ -36,7 +36,7 @@
   /**
    * The NotificationItems model module.
    * @module model/NotificationItems
-   * @version 1.30.3
+   * @version 1.30.4
    */
 
   /**

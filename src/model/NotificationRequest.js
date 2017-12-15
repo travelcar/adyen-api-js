@@ -36,7 +36,7 @@
   /**
    * The NotificationRequest model module.
    * @module model/NotificationRequest
-   * @version 1.30.3
+   * @version 1.30.4
    */
 
   /**
