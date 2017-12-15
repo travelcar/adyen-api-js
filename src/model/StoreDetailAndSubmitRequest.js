@@ -36,7 +36,7 @@
   /**
    * The StoreDetailAndSubmitRequest model module.
    * @module model/StoreDetailAndSubmitRequest
-   * @version 1.30.2
+   * @version 1.30.3
    */
 
   /**

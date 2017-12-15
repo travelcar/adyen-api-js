@@ -58,6 +58,11 @@
      */
     "CANCEL_OR_REFUND": "CANCEL_OR_REFUND",
     /**
+     * value: "AUTHORISATION_ADJUSTMENT"
+     * @const
+     */
+    "AUTHORISATION_ADJUSTMENT": "AUTHORISATION_ADJUSTMENT",
+    /**
      * value: "CAPTURE"
      * @const
      */
@@ -87,6 +92,11 @@
      * @const
      */
     "VOID_PENDING_REFUND": "VOID_PENDING_REFUND",
+    /**
+     * value: "POSTPONED_REFUND"
+     * @const
+     */
+    "POSTPONED_REFUND": "POSTPONED_REFUND",
     /**
      * value: "REQUEST_FOR_INFORMATION"
      * @const

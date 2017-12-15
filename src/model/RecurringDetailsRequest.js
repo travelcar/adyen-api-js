@@ -36,7 +36,7 @@
   /**
    * The RecurringDetailsRequest model module.
    * @module model/RecurringDetailsRequest
-   * @version 1.30.2
+   * @version 1.30.3
    */
 
   /**

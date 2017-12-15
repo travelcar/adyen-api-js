@@ -36,7 +36,7 @@
   /**
    * The FraudCheckResult model module.
    * @module model/FraudCheckResult
-   * @version 1.30.2
+   * @version 1.30.3
    */
 
   /**

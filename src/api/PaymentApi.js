@@ -33,7 +33,7 @@
   /**
    * Payment service.
    * @module api/PaymentApi
-   * @version 1.30.2
+   * @version 1.30.3
    */
 
   /**
@@ -254,12 +254,12 @@
      * @param {module:model/ModificationRequest} modificationRequest The Modification Request
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ModificationResult} and HTTP response
      */
-    this.cancelrefundWithHttpInfo = function(modificationRequest) {
+    this.cancelOrRefundWithHttpInfo = function(modificationRequest) {
       var postBody = modificationRequest;
 
       // verify the required parameter 'modificationRequest' is set
       if (modificationRequest === undefined || modificationRequest === null) {
-        throw new Error("Missing the required parameter 'modificationRequest' when calling cancelrefund");
+        throw new Error("Missing the required parameter 'modificationRequest' when calling cancelOrRefund");
       }
 
 
@@ -290,8 +290,8 @@
      * @param {module:model/ModificationRequest} modificationRequest The Modification Request
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ModificationResult}
      */
-    this.cancelrefund = function(modificationRequest) {
-      return this.cancelrefundWithHttpInfo(modificationRequest)
+    this.cancelOrRefund = function(modificationRequest) {
+      return this.cancelOrRefundWithHttpInfo(modificationRequest)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

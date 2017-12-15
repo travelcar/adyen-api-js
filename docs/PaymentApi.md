@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**authorise**](PaymentApi.md#authorise) | **POST** /Payment/v30/authorise | Creates a payment authorisation
 [**authorise3d**](PaymentApi.md#authorise3d) | **POST** /Payment/v30/authorise3d | Completes a 3-D Secure payment authorisation
 [**cancel**](PaymentApi.md#cancel) | **POST** /Payment/v30/cancel | Cancels a payment authorisation
-[**cancelrefund**](PaymentApi.md#cancelrefund) | **POST** /Payment/v30/cancelOrRefund | Disable a stored payment detail
+[**cancelOrRefund**](PaymentApi.md#cancelOrRefund) | **POST** /Payment/v30/cancelOrRefund | Disable a stored payment detail
 [**capture**](PaymentApi.md#capture) | **POST** /Payment/v30/capture | Captures a payment authorisation
 [**refund**](PaymentApi.md#refund) | **POST** /Payment/v30/refund | Refunds a payment
 
@@ -209,9 +209,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="cancelrefund"></a>
-# **cancelrefund**
-> ModificationResult cancelrefund(modificationRequest)
+<a name="cancelOrRefund"></a>
+# **cancelOrRefund**
+> ModificationResult cancelOrRefund(modificationRequest)
 
 Disable a stored payment detail
 
@@ -231,7 +231,7 @@ var apiInstance = new AdyenApiJs.PaymentApi();
 
 var modificationRequest = new AdyenApiJs.ModificationRequest(); // ModificationRequest | The Modification Request
 
-apiInstance.cancelrefund(modificationRequest).then(function(data) {
+apiInstance.cancelOrRefund(modificationRequest).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
