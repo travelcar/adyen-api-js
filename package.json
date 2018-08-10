@@ -1,6 +1,6 @@
 {
   "name": "adyen-api-js",
-  "version": "1.30.4",
+  "version": "1.30.5",
   "description": "Operations_about_payments_recurring_and_payout",
   "license": "Apache-2.0",
   "main": "src/index.js",

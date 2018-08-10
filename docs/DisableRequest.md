@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**merchantAccount** | **String** | the merchant account which will be used for processing this request | [optional] 
-**shopperReference** | **String** | a reference you use to uniquely identify the shopper (e.g. user ID or account ID) | [optional] 
-**recurringDetailReference** | **String** | the recurring detail you wish to disable | [optional] 
-**contract** | **String** | specify the contract if you only want to disable a specific use | [optional] 
+**contract** | [**Contract**](Contract.md) |  | [optional] 
+**merchantAccount** | **String** | Your merchant account. | 
+**recurringDetailReference** | **String** | The ID that uniquely identifies the recurring detail reference. If it is not provided, the whole recurring contract of the &#x60;shopperReference&#x60; will be disabled, which includes all recurring details. | [optional] 
+**shopperReference** | **String** | The ID that uniquely identifies the shopper. This &#x60;shopperReference&#x60; must be the same as the &#x60;shopperReference&#x60; used in the initial payment. | 
 
 
