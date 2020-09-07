@@ -1,3 +1,9 @@
+<p align="center">
+<br><br><b>
+:x:	 This project is no longer supported, please consider using <a href="https://github.com/Adyen/adyen-node-api-library">official NodeJS library</a> instead :x:
+</b><br><br>
+</p>
+
 # adyen-api-js
 
 AdyenApiJs - JavaScript client for adyen-api-js
